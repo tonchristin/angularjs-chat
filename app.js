@@ -37,14 +37,11 @@ app.controller('main_ctrl', function($scope, $http, $timeout, $rootScope, cfpLoa
           messagingSenderId: "844275988709",
           appId: "1:844275988709:web:d858702f8562273f59bc0c",
           databaseURL: "https://moronlinetestchat-default-rtdb.firebaseio.com/",
-          //databaseURL: "https://moronline-chat-default-rtdb.asia-southeast1.firebasedatabase.app",
         }
 
         if (!firebase.apps.length) {
           firebase.initializeApp(firebaseConfig);
         }
-    
-        console.log(firebase.apps);
     
 
   /* Chat
@@ -115,3 +112,9 @@ app.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
   cfpLoadingBarProvider.includeSpinner = false;
   cfpLoadingBarProvider.includeBar = true;
 }]);
+
+app.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
+});

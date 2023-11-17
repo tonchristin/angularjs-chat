@@ -44,6 +44,8 @@ body {
   background-color: #f1f1f1;
   border-radius: 30px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .chatroom .chatitem ul {
   list-style: none;

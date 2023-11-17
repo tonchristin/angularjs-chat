@@ -4,7 +4,11 @@
     "indexes": "index.html"
   },
   "hosting": {
-    "site": "moronline-test-angularchat",
-    "public": "public"
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }

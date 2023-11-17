@@ -3,7 +3,7 @@
     <div class="uk-container">
       <h1 class="uk-margin-large-top uk-margin-large-bottom"> Chat Page </h1>
         <div id="chatitem" class="chatitem">
-          <ul ng-repeat="msg in messages">
+          <ul ng-repeat="msg in messages | reverse">
             <li> 
               <div class="avatar">
                 <i> {{firstLetter(msg.client_name)}} </i> 
