@@ -1,0 +1,30 @@
+<section>
+  <div class="chatroom">
+    <div class="uk-container">
+      <h1 class="uk-margin-large-top uk-margin-large-bottom"> Chat Page </h1>
+        <div id="chatitem" class="chatitem">
+          <ul ng-repeat="msg in messages">
+            <li> 
+              <div class="avatar">
+                <i> {{firstLetter(msg.client_name)}} </i> 
+                <span> ({{msg.client_name}}) </span>
+              </div>
+              <div class="message">
+                {{msg.message}}
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+      <div class="inputarea" uk-grid>
+        <div class="uk-inline uk-width-3-4">
+            <input class="uk-input uk-form-width-full" name="message" type="text" ng-model="message" placeholder="Enter your message.." aria-label="Enter your message..">
+        </div>
+        <div class="uk-inline uk-width-1-4 uk-padding-remove-left">
+            <button class="uk-width-1-1 uk-display-block uk-button" ng-click="add_message(message)"> Send </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

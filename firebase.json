@@ -1,0 +1,10 @@
+{
+  "firestore": {
+    "rules": "database.rules.json",
+    "indexes": "index.html"
+  },
+  "hosting": {
+    "site": "moronline-test-angularchat",
+    "public": "public"
+  }
+}

@@ -1,0 +1,15 @@
+<section>
+    <div class="login-wrapper">
+        <div class="uk-width-auto uk-text-center uk-position-center">
+            <h2 class="uk-text-secondary"> Enter your name for join the chat room! </h2>
+            <div uk-grid>
+                <div class="uk-inline uk-width-3-4">
+                    <input class="uk-input uk-form-width-full" name="client_name" type="text" ng-model="client_name" placeholder="Your name.." aria-label="Your name..">
+                </div>
+                <div class="uk-inline uk-width-1-4 uk-padding-remove-left">
+                    <button class="uk-width-1-1 uk-display-block uk-button" ng-click="login_action(client_name)"> Enter </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

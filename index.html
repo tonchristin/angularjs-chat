@@ -1,0 +1,54 @@
+<html ng-app="angularchat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AngularJS Chat with Firebase Store</title>
+
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+    <script src="assets/js/controller/chat_ctrl.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script> 
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
+
+    <link href="components/angular-loadingbar/loading-bar.min.css" rel="stylesheet" />
+    <script src="components/angular-loadingbar/loading-bar.min.js"></script>
+
+    <!---- LESS for custom stylesheet ---->
+    <link rel="stylesheet/less" type="text/css" href="assets/style/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="assets/js/font-awesome-5-pro.js"></script>
+</head>
+
+<body>
+    
+    <main ng-controller="main_ctrl">
+
+        <!------ Content ------>
+
+        <div ng-view></div>
+        
+    </main>
+
+</body>
+
+</html>
